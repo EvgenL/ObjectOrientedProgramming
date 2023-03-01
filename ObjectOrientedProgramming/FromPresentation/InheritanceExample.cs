@@ -12,6 +12,7 @@ public class InheritanceExample
         Weapon weapon = new LaserGun();
         weapon.Damage = 9000;
         // weapon.LaserColor = "Red";
+        ConsoleDrawer.DrawSmile();
 
         
         // LaserGun laser = new LaserGun();

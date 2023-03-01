@@ -4,14 +4,14 @@ public class ClassExample
 {
     public static void Test()
     {
-        Airplane plane = new Airplane("Boeing");
+        Airplane2 plane = new Airplane2("Boeing");
 
         plane.DeleteName();
 
     }
 }
 
-public class Airplane
+public class Airplane2
 {
     private string _name; // Поле
 
@@ -23,7 +23,7 @@ public class Airplane
     
     public int MaxSpeed { get; private set; } // Свойство
 
-    public Airplane(string name) // Конструктор
+    public Airplane2(string name) // Конструктор
     {
         _name = name;
         MaxSpeed = 900;

@@ -10,6 +10,7 @@ public class GettersExample
         Console.WriteLine($"{biba.GetName()}'s age is: {biba.GetAge()}");
         
         Console.WriteLine($"{boba.GetName()}'s age is: {boba.GetAge()}");
+        ConsoleDrawer.DrawSmile();
     }
     
     public class Person

@@ -4,13 +4,15 @@ public class SettersExample
 {
     public static void Test()
     {
-        var biba = new Person();
         
-        biba.SetName("Biba");
-        
-        Console.WriteLine($"{biba.GetName()}'s age is: {biba.GetAge()}");
-        
-        biba.SetAge(1);
+        ConsoleDrawer.Number = 10941124;
+        // var biba = new Person();
+        //
+        // biba.SetName("Biba");
+        //
+        // Console.WriteLine($"{biba.GetName()}'s age is: {biba.GetAge()}");
+        //
+        // biba.SetAge(1);
     }
     
     public class Person

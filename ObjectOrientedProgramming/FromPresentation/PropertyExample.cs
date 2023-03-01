@@ -7,9 +7,10 @@ public class PropertyExample
         var biba = new Person();
 
         biba.Name = "Biba";
-        biba.Age = 1;
+        biba.Age = -1;
         
         Console.WriteLine($"{biba.Name}'s age is: {biba.Age}");
+        ConsoleDrawer.DrawSmile();
         
     }
     
@@ -21,13 +22,20 @@ public class PropertyExample
         public int Age
         {
             get => _age;
-            set => _age = value;
+            set
+            {
+                if (value < 0) value = 0;
+                _age = value;
+            } 
         }
 
         public string Name
         {
             get => _name;
-            set => _name = value;
+            set
+            {
+                _name = value;
+            }
         }
 
         public Person(int age, string name)
